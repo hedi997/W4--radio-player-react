@@ -32,11 +32,12 @@ export default function App() {
     <div>
       <div className="radioCon">
         <h1>Radioplayer</h1>
-        <b>Search radiochannel</b>
+        <b className="search">Search radiochannel</b>
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          className="search"
         ></input>
         <div>
           {isLoading ? (
@@ -51,8 +52,12 @@ export default function App() {
                   backgroundColor: "#" + channel.color,
                 }}
               >
-                <div>
-                  <img className="img" src={channel.image} alt={channel.name} />
+                <div className="img">
+                  <img
+                    className="img2"
+                    src={channel.image}
+                    alt={channel.name}
+                  />
                 </div>
                 <div className="radio2">
                   <h1 className="title">{channel.name}</h1>
