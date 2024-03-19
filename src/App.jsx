@@ -31,7 +31,7 @@ export default function App() {
   return (
     <div>
       <div className="radioCon">
-        <h1>Radioplayers</h1>
+        <h1>Radioplayer</h1>
         <b>Search radiochannel</b>
         <input
           type="text"
